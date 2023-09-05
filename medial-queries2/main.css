@@ -4,6 +4,7 @@ body {
 
 div {
   border: 1px solid white;
+  background-color: ;
 }
 
 .container {
@@ -12,8 +13,15 @@ div {
   height: 100vh;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: blue;
 }
-
+.left-side{
+  display:flex;
+  background-color: black;
+  width:100%;
+  flex-wrap: wrap;
+  height: 50%;
+}
 .a,
 .b,
 .f {
@@ -26,26 +34,34 @@ div {
 .e {
   width: 30%;
   background-color: aqua;
-  /* flex-grow: 1; */
+  flex-grow: 1;
 }
 
 .a {
-  /* flex-grow: 1; */
+  flex-grow: 1;
+  height: 30%;
 }
 
 .b {
-  /* flex-grow: 3; */
+  flex-grow: 3;
 }
 
 .f {
-  /* flex-grow: 1; */
+  flex-grow: 1;
+ height:30%;
 }
 
 @media(min-width: 600px) {
+.left-side{
+  width:76%;
+  height:60%
+}
+
   .b {
-    width: 76%;
-    height: 30%;
-    /* flex-grow: 1; */
+    width: 100%;
+    /* height:60% */
+    /* height: 30%; */
+    flex-grow: 1;
     /* order:2; */
   }
 
@@ -53,21 +69,19 @@ div {
   .d,
   .e {
     width: 24.7%;
-    height: 30%;
-    /* flex-grow:1; */
+    /* height: 30%; */
+    flex-grow:1;
   }
 
   .f {
-    position: relative;
-    top: -288px;
-    height: 60.3vh;
+    height: 60%;
     width: 23%;
     /* flex-grow:1; */
     /* order:3; */
   }
 
   .a {
-    height: 30%;
+    height: 40%;
     /* order:1; */
   }
 
